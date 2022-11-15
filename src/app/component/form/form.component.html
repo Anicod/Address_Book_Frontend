@@ -1,0 +1,56 @@
+<div class="mainbo">
+    <div class="nobor">
+       <app-addlogo></app-addlogo>
+        <div class="logodiv">
+            <span style="font-weight: bold; color:rgb(128, 0, 255)">ADDRESS</span><br>
+            <span style="font-weight: bold; color:black;">BOOK</span>
+        </div>
+    </div>
+    <div class="solidbor">
+       <div class="mainform">
+             PERSON ADDRESS FORM
+            <div class="form">
+                <h3>FirstName</h3>
+                <input type="text">
+                <h3>LastName</h3>
+                <input type="text">
+                <h3 id="number">phone Number</h3>
+                <input type="text">
+                <h3>Address</h3>
+                <input type="text" id="address">
+                <div class="addressdetail">
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Select City</mat-label>
+                            <mat-select>
+                              <mat-option value="one">Varanasi</mat-option>
+                              <mat-option value="two">Patna</mat-option>
+                              <mat-option value="three">Delhi</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill" class="selectcity">
+                            <mat-label>Select State</mat-label>
+                            <mat-select>
+                              <mat-option value="one">Uttar Pradesh</mat-option>
+                              <mat-option value="two">Bihar</mat-option>
+                              <mat-option value="three">Jharkhand</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <input type="text" id="pinnum" placeholder="zip code">
+                    </div>
+            </div>
+            <div class="actionbtn">
+               <div>
+                    <button mat-raised-button color="basic" class="btnadd">Add User</button>
+               </div>
+               <div>
+                <button mat-raised-button color="basic" class="btnupdate">Update</button>
+               </div>
+            </div>
+       </div> 
+    </div>
+</div>
