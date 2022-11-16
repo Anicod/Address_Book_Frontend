@@ -38,7 +38,7 @@ table {
    
   }
   th {
-    padding: 30px;
+    padding: 25px;
   }
   .headdiv{
     margin-left: 100px;
@@ -48,4 +48,11 @@ table {
   }
   .btndiv{
     background-color:hwb(215 0% 0%);;
+  }
+  tr{
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    padding: 8px;
+  }
+  td{
+    font-weight: bold;
   }

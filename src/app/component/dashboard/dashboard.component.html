@@ -20,6 +20,18 @@
                   <th>State</th>
                   <th>Zip code</th>
                   <th>Phone Number</th>
+                  <th>Action</th>
+                </tr>
+                <tr *ngFor = "let user of allUser">
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.address}}</td>
+                    <td>{{user.city}}</td>
+                    <td>{{user.state}}</td>
+                    <td>{{user.zipCode}}</td>
+                    <td>{{user.phoneNumber}}</td>
+                    <td><span class="material-symbols-outlined" (click)="delete(user.Id)">delete</span></td>
+                    <td><span class="material-symbols-outlined" (click)="edit(user.Id)">edit</span></td>
                 </tr>
               </table>
         </div>

@@ -1,7 +1,7 @@
 .mainbo{
     border-style: ridge;
     width: 80%;
-    height: 650px;
+    height: 750px;
     opacity: 1;
     margin-left: 100px;
     margin-top: 60px;
@@ -20,7 +20,7 @@
 .solidbor{
     border-style: hidden;
     width: 100%;
-    height: 520px;
+    height: 700px;
     opacity: 0.8;
     display: flex;
     margin-right: 30px;
@@ -51,7 +51,7 @@ h3{
 .form{
     border-style: inset;
     width: 100%;
-    height: 440px;
+    height: 520px;
     margin: 50px;
     margin-left: 5px;
     box-shadow: 100px;

@@ -11,46 +11,48 @@
              PERSON ADDRESS FORM
             <div class="form">
                 <h3>FirstName</h3>
-                <input type="text">
+                <input type="text" [(ngModel)]="userDetail.firstName">
                 <h3>LastName</h3>
-                <input type="text">
+                <input type="text" [(ngModel)]="userDetail.lastName">
                 <h3 id="number">phone Number</h3>
-                <input type="text">
+                <input type="text" [(ngModel)]="userDetail.phoneNumber">
                 <h3>Address</h3>
-                <input type="text" id="address">
+                <input type="text" id="address" [(ngModel)]="userDetail.address">
+                <h3>note</h3>
+                <input type="text" [(ngModel)]="userDetail.note">
                 <div class="addressdetail">
                     <div>
                         <mat-form-field appearance="fill">
                             <mat-label>Select City</mat-label>
-                            <mat-select>
-                              <mat-option value="one">Varanasi</mat-option>
-                              <mat-option value="two">Patna</mat-option>
-                              <mat-option value="three">Delhi</mat-option>
+                            <mat-select [(ngModel)]="userDetail.city">
+                              <mat-option value="varanasi">Varanasi</mat-option>
+                              <mat-option value="patna">Patna</mat-option>
+                              <mat-option value="delhi">Delhi</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </div>
                     <div>
                         <mat-form-field appearance="fill" class="selectcity">
                             <mat-label>Select State</mat-label>
-                            <mat-select>
-                              <mat-option value="one">Uttar Pradesh</mat-option>
-                              <mat-option value="two">Bihar</mat-option>
-                              <mat-option value="three">Jharkhand</mat-option>
+                            <mat-select [(ngModel)]="userDetail.state">
+                              <mat-option value="uttar pradesh">Uttar Pradesh</mat-option>
+                              <mat-option value="bihar">Bihar</mat-option>
+                              <mat-option value="jharkhand">Jharkhand</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </div>
                     <div>
-                        <input type="text" id="pinnum" placeholder="zip code">
+                        <input type="text" id="pinnum" placeholder="zip code" [(ngModel)]="userDetail.zipCode">
                     </div>
             </div>
             <div class="actionbtn">
-               <div>
-                    <button mat-raised-button color="basic" class="btnadd">Add User</button>
-               </div>
-               <div>
-                <button mat-raised-button color="basic" class="btnupdate">Update</button>
-               </div>
-            </div>
+                <div>
+                     <button mat-raised-button color="basic" class="btnadd" (click)="addUser()">Add User</button>
+                </div>
+                <div>
+                 <button mat-raised-button color="basic" class="btnupdate" (click)="update()">Update</button>
+                </div>
+             </div>
        </div> 
     </div>
 </div>
